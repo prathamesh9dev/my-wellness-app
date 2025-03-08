@@ -1,0 +1,126 @@
+/* General Styles */
+.container {
+  text-align: center;
+  background: #f3f3f3;
+  padding: 50px 0;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Hero Section with Static Background */
+.hero {
+  position: relative;
+  background: url("/health-tourism.jpg") no-repeat center center/cover;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.heroContent {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* 🔥 Welcome Section - Added Gradient Effect */
+.welcomeSection {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #d4edda, #ffffff); /* Smooth Gradient */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  max-width: 85%;
+  margin: 30px auto;
+}
+
+.welcomeSection h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.welcomeSection p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Listings Container - Ensures smooth rendering */
+.listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 90%;
+  margin: 40px auto;
+  overflow-x: auto; /* Allows smooth scrolling */
+}
+
+/* Individual Cards - Performance Optimized */
+.card {
+  background: white;
+  color: black;
+  width: 12%;
+  min-width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow for less GPU load */
+  transition: transform 0.2s ease-in-out;
+  will-change: transform; /* Hinting browser for optimization */
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Ensures Images Stay Small */
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cardContent {
+  padding: 5px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: #27ae60;
+  margin-top: 5px;
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 5px;
+}

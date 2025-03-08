@@ -1,0 +1,76 @@
+/* Footer Background - Dark Stylish Gradient */
+.footer {
+    background: linear-gradient(135deg, #16a085, #2c3e50);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Contact Info */
+  .contactInfo {
+    text-align: left;
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .contactInfo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contactInfo p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  /* Social Media Section */
+  .socialMedia {
+    text-align: right;
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .socialMedia h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .icons a {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .icons a:hover {
+    color: #f4d03f;
+  }
+  
+  /* Copyright */
+  .copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  

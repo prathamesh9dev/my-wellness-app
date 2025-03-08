@@ -1,0 +1,77 @@
+/* Modern Navbar with Stylish Gradient */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: linear-gradient(135deg, #16a085, #f4d03f);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.navbar h2 a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.navbar h2 a:hover {
+  color: #2c3e50;
+}
+
+/* Navigation Links */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.navbar li a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Modern Hover Effect */
+.navbar li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #2c3e50;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar li a {
+    display: block;
+    width: 100%;
+  }
+}
